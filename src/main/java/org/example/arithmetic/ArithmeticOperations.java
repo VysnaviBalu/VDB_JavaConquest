@@ -1,4 +1,4 @@
-package org.example;
+package org.example.arithmetic;
 import java.util.Scanner;
 
 public class ArithmeticOperations {

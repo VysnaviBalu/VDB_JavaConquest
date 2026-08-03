@@ -35,4 +35,15 @@ build/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Store.idea/
+
+### Secrets / local env ###
+.env
+.env.local
+*.pem
+*.key
+
+### Logs & generated reports ###
+logs/
+*.log
+reports/

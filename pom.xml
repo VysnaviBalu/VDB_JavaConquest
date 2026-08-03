@@ -21,6 +21,13 @@
             <version>5.12.2</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Add this right below! -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.6</version>
+        </dependency>
     </dependencies>
 
     <build>

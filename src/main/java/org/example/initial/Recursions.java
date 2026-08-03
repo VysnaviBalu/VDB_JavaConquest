@@ -1,4 +1,4 @@
-package org.example;
+package org.example.initial;
 import java.util.Scanner;
 
 public class Recursions {
