@@ -13,4 +13,36 @@ public abstract class AnimalEnter {
     private final String name;
     private final int numberOfLegs;
 
+    protected AnimalEnter (String id, String name, int numberOfLegs){
+
+        this.id = Objects.requireNonNull(id, "id");
+        if(name == null || name.trim().isBlank()){ throw new IllegalArgumentException("Name cannot be blank!");}
+        if(numberOfLegs < 0){ throw new IllegalArgumentException("Legs is less than 0!");}
+        this.name = name.trim();
+        this.numberOfLegs = numberOfLegs;
+    }
+    /* Perform species - specific vocalization */
+    public abstract String makeSound();
+    public abstract String getSpecies();
+
+    /* General Getters for the declared variables */
+    public String getId(){ return id;}
+    public String getName(){return name;}
+    public int getNumberOfLegs(){return numberOfLegs;}
+
+    @Override
+    public boolean equals(Object o){
+        if(this ==o) return true;
+        if(!(o instanceof AnimalEnter a)) return false;
+        return Objects.equals(id, a.id);
+    }
+
+    @Override
+    public int hashCode(){ return Objects.hash(id);}
+
+    @Override
+    public String toString(){
+        return String.format("Animal[id=%s, species=%s, name=%s", id, getSpecies(),name);
+    }
+
 }

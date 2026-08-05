@@ -35,7 +35,9 @@ build/
 .vscode/
 
 ### Mac OS ###
-.DS_Store.idea/
+.DS_Store
+
+.idea/
 
 ### Secrets / local env ###
 .env
