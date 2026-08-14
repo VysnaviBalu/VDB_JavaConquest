@@ -1,15 +1,15 @@
 package org.example.inheritance;
 
-import org.example.inheritance.domain.AnimalDogEnter;
+import org.example.inheritance.singleInheritance.enterprise.domain.AnimalDog;
 import org.junit.jupiter.api.*;
 import static org.assertj.core.api.Assertions.*;
 @DisplayName("Dog")
 public class AnimalDogTest {
-    private AnimalDogEnter dog;
+    private AnimalDog dog;
 
     @BeforeEach
     void setup(){
-        dog = new AnimalDogEnter("Rex", "Labrador");
+        dog = new AnimalDog("Rex", "Labrador");
     }
 
     @Test
@@ -37,7 +37,7 @@ public class AnimalDogTest {
     @DisplayName("rejects blank name")
     void blankName(){
         assertThatThrownBy(() ->
-                new AnimalDogEnter("", "Poodle"))
+                new AnimalDog("", "Poodle"))
                 .isInstanceOf(IllegalArgumentException.class);
     }
 }
