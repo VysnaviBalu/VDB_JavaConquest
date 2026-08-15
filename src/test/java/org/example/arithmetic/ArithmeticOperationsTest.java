@@ -1,4 +1,4 @@
-package org.example;
+package org.example.arithmetic;
 
 import org.example.arithmetic.local.ArithmeticOperations;
 import org.junit.jupiter.api.Test;

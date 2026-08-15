@@ -23,8 +23,9 @@ The same concept again, this time built the way it would exist in a real backend
 - Proper layered architecture (domain / service separation)
 - `equals()`/`hashCode()` correctness, UUID-based identity where relevant
 - Thread-safe collections where applicable
-- **JUnit 5** test coverage
-- **Mockito** for mocking external dependencies in isolated unit tests
+- **JUnit 5 + AssertJ** test coverage
+
+> **Note on Mockito:** the dependency is set up, but not yet exercised here — mocking is most meaningful against *real* external dependencies (databases, APIs), which this repo doesn't have yet. Mockito-based tests will be built out as part of the 63-hour backend course repo, once there's a real repository/API layer worth mocking.
 
 ## Why this structure
 
@@ -32,13 +33,13 @@ Tutorials teach syntax. They rarely teach *why* a senior engineer's code looks d
 
 ## Topics covered so far
 
-| Topic | Local | Production | Enterprise |
-|---|:---:|:---:|:---:|
-| Arithmetic Operations | ✅ | ✅ | ✅ |
-| Encapsulation | ✅ | ✅ | ✅ |
-| Single Inheritance | ✅ | ✅ | ✅ |
-| Multi-level Inheritance | ✅ | ✅ | ✅ |
-| Polymorphism (Overloading) | ✅ | ✅ | ✅ |
+| Topic | Local | Production | Enterprise | JUnit Tests |
+|---|:---:|:---:|:---:|:---:|
+| Arithmetic Operations | ✅ | ✅ | ✅ | ✅ |
+| Encapsulation | ✅ | ✅ | ✅ | ✅ |
+| Single Inheritance | ✅ | ✅ | ✅ | ✅ |
+| Multi-level Inheritance | ✅ | ✅ | ✅ | ✅ |
+| Polymorphism (Overloading) | ✅ | ✅ | ✅ | ✅ |
 
 *(Table updated as new concepts are added.)*
 

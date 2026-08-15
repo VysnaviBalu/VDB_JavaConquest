@@ -1,4 +1,4 @@
-package org.example.inheritance;
+package org.example.inheritance.singleInheritance;
 
 import org.example.inheritance.singleInheritance.enterprise.domain.AnimalDog;
 import org.junit.jupiter.api.*;
